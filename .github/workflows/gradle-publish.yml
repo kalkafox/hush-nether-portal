@@ -34,6 +34,8 @@ jobs:
       with:
         gradle-version: 7.6.1
 
+    - run: chmod +x gradlew
+
     - name: Build with Gradle
       run: ./gradlew build
 
