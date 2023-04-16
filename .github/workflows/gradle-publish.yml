@@ -7,11 +7,13 @@
 
 name: Gradle Package
 
+# on main and tags
 on:
   push:
     branches: [ main ]
-  tags:
-    - '*'
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
