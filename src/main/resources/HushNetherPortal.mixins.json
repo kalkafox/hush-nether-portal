@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.kalkafox.hushnetherportal.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "HushNetherPortal.refmap.json",
+  "mixins": [
+    "NetherPortalBlockMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
