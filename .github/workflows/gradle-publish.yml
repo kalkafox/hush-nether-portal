@@ -8,10 +8,7 @@
 name: Gradle Package
 
 # on main and tags
-on:
-  push:
-    branches: [ main ]
-  workflow_dispatch:
+on: push
 
 jobs:
   build:
@@ -42,5 +39,6 @@ jobs:
     
     - name: Release
       uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
       with:
         files: build/libs/HushNetherPortal-1.0-SNAPSHOT.jar
